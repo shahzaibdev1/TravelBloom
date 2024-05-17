@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TravelBloom</title>
+  </head>
+
+  <style>
+    *,
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #1976d2;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav li a:hover {
+      color: #e0efff;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .search-bar button {
+      padding: 5px 10px;
+      background-color: #1976d2;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    header {
+      background-image: url("https://images.unsplash.com/photo-1515884045391-a9e471f4d36f?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with the path to your image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 800px;
+    }
+
+    .overlay {
+      /* Add a black transparent overlay to slightly darken the image */
+      background-color: rgba(0, 0, 0, 0.342);
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 50%;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    button.book-now {
+      margin-top: 20px;
+      padding: 20px 60px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      background-color: rgba(27, 44, 37, 0.562);
+      backdrop-filter: blur(3px);
+      color: #fff;
+      transition: all 500ms;
+      cursor: pointer;
+    }
+
+    button.book-now:hover {
+      background-color: rgba(41, 66, 56, 0.142);
+      backdrop-filter: blur(2px);
+    }
+
+    
+.resultList {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    /* width: max(20vw, 200px); */ 
+    width: 200px;
+    max-height: calc(100vh - 90px);
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 15px;
+    
+    visibility: hidden; /* js toggle */
+}
+
+.destinationCard {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border: none;
+    border-radius: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.destinationName {
+    background-color: rgba(82, 98, 188, 0.2);
+    align-self: stretch;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.destinationImg {
+    width: 100%;
+    height: auto;
+}
+
+.destinationDesc {
+    color: white;
+    max-height: 150px;
+}
+
+.destinationBtn {
+    background-color: rgba(82, 98, 188, 0.2);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+
+}
+
+  </style>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="searchBar" placeholder="Enter a destination or keyword" />
+        <button type="button" onclick="keywordSearch()">Search</button>
+        <button type="button" id="clear">Clear</button>
+      </div>
+    </nav>
+
+    <header>
+      <div class="overlay">
+        <div class="container">
+          <h1>Welcome to TravelBloom</h1>
+          <p>
+            Your one-stop shop for crafting unforgettable travel experiences!
+            Whether you're seeking a relaxing beach getaway, an adventurous
+            jungle trek, or a cultural immersion tour, Wanderlust Travels is
+            here to help you plan your dream vacation. We offer a wide range of
+            travel packages, personalized itineraries, and expert advice to
+            ensure your trip is seamless and enjoyable.
+          </p>
+
+          <button class="book-now" id="bookNow" type="button">Book Now</button>
+        </div>
+      </div>
+    </header>
+    
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>

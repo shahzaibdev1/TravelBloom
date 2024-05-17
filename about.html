@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TravelBloom</title>
+  </head>
+
+  <style>
+    *,
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #1976d2;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav li a:hover {
+      color: #e0efff;
+    }
+
+    header {
+      background-image: url("https://images.unsplash.com/photo-1515884045391-a9e471f4d36f?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with the path to your image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 800px;
+    }
+
+    .overlay {
+      /* Add a black transparent overlay to slightly darken the image */
+      background-color: rgba(0, 0, 0, 0.342);
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 50%;
+    }
+    .team {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .team h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .team p {
+      font-size: 1.2em;
+
+      margin-bottom: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .team-member {
+      margin: 15px;
+      text-align: center;
+      color: #fff;
+      width: 280px; /* Adjust width as needed */
+    }
+
+    .team-member img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%; /* Circular image */
+    }
+
+    .team-member h3 {
+      font-size: 1.4em;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      font-size: 1em;
+    }
+  </style>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="overlay">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>
+            Welcome to TravelBloom, your trusted companion for crafting
+            unforgettable travel experiences! We're a passionate team of travel
+            enthusiasts dedicated to helping you explore the world and create
+            memories that last a lifetime.
+          </p>
+          <br />
+          <br />
+          <p>
+            At TravelBloom, your satisfaction is our top priority. We are
+            committed to exceeding your expectations and ensuring you have a
+            stress-free and enjoyable travel experience.
+          </p>
+        </div>
+
+        <section class="team">
+          <h2>Our Amazing Team</h2>
+          <p>
+            Meet the passionate individuals behind TravelBloom, dedicated
+            to making your travel dreams a reality.
+          </p>
+          <div class="team-members">
+            <div class="team-member">
+              <img
+                width="300"
+                height="300"
+                src="https://images.unsplash.com/photo-1629532599813-141ef98cc1a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team Member 1 Name"
+              />
+              <h3>Shahzaib</h3>
+              <p>Senior travel agent</p>
+            </div>
+            <div class="team-member">
+              <img
+                width="300"
+                height="300"
+                src="https://images.unsplash.com/photo-1629532599813-141ef98cc1a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team Member 1 Name"
+              />
+              <h3>Shahzaib</h3>
+              <p>Senior travel agent</p>
+            </div>
+            <div class="team-member">
+              <img
+                width="300"
+                height="300"
+                src="https://images.unsplash.com/photo-1629532599813-141ef98cc1a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Team Member 1 Name"
+              />
+              <h3>Shahzaib</h3>
+              <p>Senior travel agent</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+  </body>
+</html>
